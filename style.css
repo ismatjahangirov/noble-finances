@@ -1,0 +1,287 @@
+
+
+:root {
+
+  /* ----------------------------------------------------------
+     🎨 COLOR — Primitive Palette
+     ---------------------------------------------------------- */
+
+  /* Ağ / Açıq tonlar */
+  --color-white:           #FFFFFF;
+  --color-off-white:       #F9F7F4;   /* səhifə fonu — krema tonu */
+  --color-surface:         #F2EFE9;   /* kartlar, bölmə arxa planı */
+
+  /* Tünd / Mətn */
+  --color-black:           #1A1A1A;   /* əsas mətlər */
+  --color-dark-900:        #111111;
+  --color-dark-800:        #2C2C2C;
+  --color-dark-600:        #4A4A4A;   /* ikinci dərəcəli mətn */
+  --color-dark-400:        #767676;   /* placeholder, caption */
+
+  /* Əsas Brend — Warm Brown / Earthy */
+  --color-primary-900:     #2D1A0E;
+  --color-primary-800:     #4B2E18;
+  --color-primary-700:     #6B3F20;
+  --color-primary-600:     #8B5230;
+  --color-primary-500:     #A66540;   /* əsas brend rəngi */
+  --color-primary-400:     #C07D56;
+  --color-primary-300:     #D49B7A;
+  --color-primary-200:     #E8BDA4;
+  --color-primary-100:     #F5DDD0;
+  --color-primary-50:      #FDF3EE;
+
+  /* Aksent — Deep Forest Green */
+  --color-accent-900:      #0D2318;
+  --color-accent-800:      #163D2A;
+  --color-accent-700:      #1F573C;
+  --color-accent-600:      #28714E;
+  --color-accent-500:      #2F8A60;   /* CTA düymələri, vurğular */
+  --color-accent-400:      #4AA87B;
+  --color-accent-300:      #72C49C;
+  --color-accent-200:      #A8DEC1;
+  --color-accent-100:      #D6F0E4;
+  --color-accent-50:       #EEF9F3;
+
+  /* Neytral */
+  --color-neutral-900:     #1C1917;
+  --color-neutral-800:     #292524;
+  --color-neutral-700:     #44403C;
+  --color-neutral-600:     #57534E;
+  --color-neutral-500:     #78716C;
+  --color-neutral-400:     #A8A29E;
+  --color-neutral-300:     #D6D3D1;
+  --color-neutral-200:     #E7E5E4;
+  --color-neutral-100:     #F5F5F4;
+  --color-neutral-50:      #FAFAF9;
+
+  /* Sistem rəngləri */
+  --color-success:         #2F8A60;
+  --color-success-light:   #D6F0E4;
+  --color-warning:         #D97706;
+  --color-warning-light:   #FEF3C7;
+  --color-error:           #DC2626;
+  --color-error-light:     #FEE2E2;
+  --color-info:            #2563EB;
+  --color-info-light:      #DBEAFE;
+
+
+  /* ----------------------------------------------------------
+     🎯 COLOR — Semantic Tokens
+     ---------------------------------------------------------- */
+
+  --color-bg-page:         var(--color-off-white);
+  --color-bg-surface:      var(--color-surface);
+  --color-bg-card:         var(--color-white);
+  --color-bg-dark:         var(--color-primary-900);
+  --color-bg-accent:       var(--color-accent-500);
+
+  --color-text-primary:    var(--color-dark-900);
+  --color-text-secondary:  var(--color-dark-600);
+  --color-text-muted:      var(--color-dark-400);
+  --color-text-inverse:    var(--color-white);
+  --color-text-brand:      var(--color-primary-600);
+  --color-text-accent:     var(--color-accent-600);
+
+  --color-border:          var(--color-neutral-200);
+  --color-border-strong:   var(--color-neutral-300);
+  --color-border-brand:    var(--color-primary-300);
+
+  --color-btn-primary-bg:      var(--color-primary-900);
+  --color-btn-primary-text:    var(--color-white);
+  --color-btn-primary-hover:   var(--color-primary-800);
+
+  --color-btn-secondary-bg:    var(--color-white);
+  --color-btn-secondary-text:  var(--color-primary-900);
+  --color-btn-secondary-border:var(--color-primary-900);
+
+  --color-btn-accent-bg:       var(--color-accent-500);
+  --color-btn-accent-text:     var(--color-white);
+  --color-btn-accent-hover:    var(--color-accent-600);
+
+  --color-tag-bg:          var(--color-surface);
+  --color-tag-text:        var(--color-dark-600);
+  --color-tag-border:      var(--color-neutral-300);
+
+
+  /* ----------------------------------------------------------
+     🔤 TYPOGRAPHY — Font Families
+     ---------------------------------------------------------- */
+
+  /* Dizaynda serif display + sans-serif body kombinasiyası */
+  --font-display:   'Playfair Display', 'Georgia', serif;    /* H1, H2 — noble görünüş */
+  --font-body:      'DM Sans', 'Helvetica Neue', sans-serif; /* paragraflar, UI */
+  --font-mono:      'JetBrains Mono', 'Courier New', monospace; /* rəqəmlər, kodlar */
+
+
+  /* ----------------------------------------------------------
+     🔤 TYPOGRAPHY — Font Sizes (Type Scale)
+     ---------------------------------------------------------- */
+
+  --text-xs:   0.75rem;    /*  12px */
+  --text-sm:   0.875rem;   /*  14px */
+  --text-base: 1rem;       /*  16px */
+  --text-md:   1.125rem;   /*  18px */
+  --text-lg:   1.25rem;    /*  20px */
+  --text-xl:   1.5rem;     /*  24px */
+  --text-2xl:  1.875rem;   /*  30px */
+  --text-3xl:  2.25rem;    /*  36px */
+  --text-4xl:  3rem;       /*  48px */
+  --text-5xl:  3.75rem;    /*  60px */
+  --text-6xl:  4.5rem;     /*  72px */
+
+
+  /* ----------------------------------------------------------
+     🔤 TYPOGRAPHY — Line Heights
+     ---------------------------------------------------------- */
+
+  --leading-tight:    1.2;
+  --leading-snug:     1.35;
+  --leading-normal:   1.5;
+  --leading-relaxed:  1.625;
+  --leading-loose:    1.8;
+
+
+  /* ----------------------------------------------------------
+     🔤 TYPOGRAPHY — Font Weights
+     ---------------------------------------------------------- */
+
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+  --weight-black:     900;
+
+
+  /* ----------------------------------------------------------
+     🔤 TYPOGRAPHY — Letter Spacing
+     ---------------------------------------------------------- */
+
+  --tracking-tight:   -0.025em;
+  --tracking-normal:   0em;
+  --tracking-wide:     0.025em;
+  --tracking-wider:    0.05em;
+  --tracking-widest:   0.1em;
+
+
+  /* ----------------------------------------------------------
+     🔤 TYPOGRAPHY — Semantic Text Styles
+     ---------------------------------------------------------- */
+
+  /* Hero başlıq */
+  --ts-hero-size:       var(--text-5xl);
+  --ts-hero-weight:     var(--weight-bold);
+  --ts-hero-leading:    var(--leading-tight);
+  --ts-hero-tracking:   var(--tracking-tight);
+  --ts-hero-font:       var(--font-display);
+
+  /* H1 */
+  --ts-h1-size:         var(--text-4xl);
+  --ts-h1-weight:       var(--weight-bold);
+  --ts-h1-leading:      var(--leading-tight);
+  --ts-h1-font:         var(--font-display);
+
+  /* H2 */
+  --ts-h2-size:         var(--text-3xl);
+  --ts-h2-weight:       var(--weight-semibold);
+  --ts-h2-leading:      var(--leading-snug);
+  --ts-h2-font:         var(--font-display);
+
+  /* H3 */
+  --ts-h3-size:         var(--text-xl);
+  --ts-h3-weight:       var(--weight-semibold);
+  --ts-h3-leading:      var(--leading-snug);
+  --ts-h3-font:         var(--font-body);
+
+
+  /* Komponent daxili boşluq */
+
+
+  --padding-card:         var(--space-6);
+  --padding-card-lg:      var(--space-8);
+
+  --padding-section-y:    var(--space-20);   /* bölmə üst/alt boşluğu */
+  --padding-section-x:    var(--space-6);    /* mobil yanlarda */
+
+  --padding-nav:          var(--space-5) var(--space-8);
+
+  /* Elementlər arası boşluq */
+  --gap-xs:   var(--space-2);
+  --gap-sm:   var(--space-4);
+  --gap-md:   var(--space-6);
+  --gap-lg:   var(--space-8);
+  --gap-xl:   var(--space-12);
+  --gap-2xl:  var(--space-16);
+
+  /* Konteyner */
+  --container-sm:   640px;
+  --container-md:   768px;
+  --container-lg:   1024px;
+  --container-xl:   1280px;
+  --container-2xl:  1440px;
+  --container-pad:  var(--space-6);
+
+
+  /* ----------------------------------------------------------
+     🔲 BORDER RADIUS
+     ---------------------------------------------------------- */
+
+  --radius-none:    0;
+  --radius-sm:      0.25rem;   /*  4px */
+  --radius-md:      0.5rem;    /*  8px */
+  --radius-lg:      0.75rem;   /* 12px */
+  --radius-xl:      1rem;      /* 16px */
+  --radius-2xl:     1.5rem;    /* 24px */
+  --radius-3xl:     2rem;      /* 32px */
+  --radius-full:    9999px;    /* pill / dairə */
+
+  /* Semantic */
+  --radius-btn:     var(--radius-full);   /* düymələr — pill */
+  --radius-card:    var(--radius-2xl);    /* kartlar */
+  --radius-tag:     var(--radius-full);   /* tag/badge */
+  --radius-input:   var(--radius-lg);     /* form sahələri */
+  --radius-image:   var(--radius-2xl);    /* şəkillər */
+
+
+  /* ----------------------------------------------------------
+     🌑 SHADOWS
+     ---------------------------------------------------------- */
+
+  --shadow-xs:  0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm:  0 1px 3px 0 rgba(0, 0, 0, 0.08),
+                0 1px 2px -1px rgba(0, 0, 0, 0.06);
+  --shadow-md:  0 4px 6px -1px rgba(0, 0, 0, 0.08),
+                0 2px 4px -2px rgba(0, 0, 0, 0.06);
+  --shadow-lg:  0 10px 15px -3px rgba(0, 0, 0, 0.08),
+                0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  --shadow-xl:  0 20px 25px -5px rgba(0, 0, 0, 0.10),
+                0 8px 10px -6px rgba(0, 0, 0, 0.06);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+
+  /* Rəngli kölgələr */
+  --shadow-brand:  0 8px 24px rgba(166, 101, 64, 0.20);
+  --shadow-accent: 0 8px 24px rgba(47, 138, 96, 0.20);
+
+  /* Semantic */
+  --shadow-card:    var(--shadow-md);
+  --shadow-card-hover: var(--shadow-xl);
+  --shadow-nav:     var(--shadow-sm);
+  --shadow-btn:     var(--shadow-brand);
+  --shadow-modal:   var(--shadow-2xl);
+
+
+  /* ----------------------------------------------------------
+     📏 BORDER WIDTHS
+     ---------------------------------------------------------- */
+
+  --border-0:   0;
+  --border-1:   1px;
+  --border-2:   2px;
+  --border-4:   4px;
+
+  --border-card:  var(--border-1);
+  --border-input: var(--border-1);
+  --border-btn:   var(--border-2);
+
+}
+
+
