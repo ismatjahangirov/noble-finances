@@ -299,3 +299,74 @@
 @media (min-width:1280px) {
    
 }
+/* ====================================================
+   HAQQIMIZDA (ABOUT) Bölməsi
+==================================================== */
+#about {
+  padding: var(--padding-section-y) var(--padding-section-x);
+  background-color: var(--color-bg-surface);
+}
+
+#about .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+  max-width: var(--container-xl);
+  margin: 0 auto;
+}
+
+/* Başlıq */
+#about h2 {
+  font-size: var(--ts-h2-size);
+  font-weight: var(--ts-h2-weight);
+  font-family: var(--ts-h2-font);
+  line-height: var(--ts-h2-leading);
+  color: var(--color-text-brand);
+  text-align: center;
+}
+
+/* Kartlar */
+#about > .container > div:last-child {
+  display: flex;
+  gap: var(--gap-lg);
+  justify-content: space-between;
+}
+
+#about > .container > div:last-child div {
+  flex: 1;
+  background: var(--color-bg-card);
+  padding: var(--padding-card);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+#about > .container > div:last-child div:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* Şəkillər */
+#about img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: var(--gap-sm);
+  border-radius: var(--radius-image);
+}
+
+/* Kart başlıqları */
+#about h3 {
+  font-size: var(--ts-h3-size);
+  font-weight: var(--ts-h3-weight);
+  font-family: var(--ts-h3-font);
+  color: var(--color-text-primary);
+  margin-bottom: var(--gap-xs);
+}
+
+/* Kart mətnləri */
+#about div p {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+}
