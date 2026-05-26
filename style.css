@@ -299,9 +299,6 @@
 @media (min-width:1280px) {
    
 }
-/* ====================================================
-   HAQQIMIZDA (ABOUT) Bölməsi
-==================================================== */
 #about {
   padding: var(--padding-section-y) var(--padding-section-x);
   background-color: var(--color-bg-surface);
@@ -375,4 +372,257 @@
   font-size: var(--text-sm);
   color: var(--color-text-secondary);
   line-height: var(--leading-normal);
+}
+#services {
+  max-width: 100%;
+  padding: 120px 0;
+  background: #f4f4f4;
+}
+
+#services .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.first-page {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.first-page p:first-child {
+  font-size: 13px;
+  font-weight: 500;
+  color: #446344;
+  margin-bottom: 14px;
+}
+
+.first-page h2 {
+  width: 640px;
+
+  font-size: 58px;
+  line-height: 64px;
+  font-weight: 500;
+
+  color: #355335;
+
+  margin-bottom: 18px;
+}
+
+.first-page p:nth-child(3) {
+  font-size: 14px;
+  color: #7a7a7a;
+  margin-bottom: 25px;
+}
+
+.green-btn {
+  width: 130px;
+  height: 42px;
+
+  border: none;
+  border-radius: 99px;
+
+  background: #294b2f;
+  color: white;
+
+  font-size: 13px;
+  cursor: pointer;
+
+  transition: 0.4s ease;
+}
+
+.green-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 9px 15px rgba(41, 75, 47, 0.2);
+}
+
+
+.second-page,
+.third-page,
+.fourth-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 55px 65px;
+  margin-bottom: 28px;
+}
+.second-container,
+.third-container,
+.fourth-container{
+    width: 1040px;
+    height: 430px;
+    background: #d8f2d6;
+    border-radius: 22px;
+
+    padding: 58px 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+
+.second-container:hover,
+.third-container:hover,
+.fourth-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+.second-container img,
+.third-container img,
+.fourth-container img {
+  width: 320px;
+  object-fit: contain;
+
+  transition: 0.6s ease;
+}
+
+.second-container:hover img,
+.third-container:hover img,
+.fourth-container:hover img {
+  transform: scale(1.08) rotate(3deg);
+}
+
+.second-container h3,
+.third-container h3,
+.fourth-container h3 {
+    font-size: 58px;
+    line-height: 0.95;
+    font-weight: 500;
+
+    color: #355335;
+
+    margin-bottom: 28px;
+}
+
+.second-container p,
+.third-container p,
+.fourth-container p {
+   width: 393px;
+   height: 174px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #667066;
+  margin-bottom: 40px;
+}
+.second-container button,
+.third-container button,
+.fourth-container button {
+    height: 44px;
+    padding: 0 22px;
+
+    border: none;
+    border-radius: 999px;
+
+    background: white;
+
+    font-size: 14px;
+    color: #5c665c;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.second-container button:hover,
+.third-container button:hover,
+.fourth-container button:hover {
+  background: #294b2f;
+  color: white;
+}
+
+
+
+
+
+.third-container {
+  flex-direction: row-reverse;
+}
+
+.fourth-container {
+  flex-direction: row;
+}
+
+
+@media(max-width:1100px) {
+
+  #services .container {
+    width: 90%;
+  }
+
+  .second-container,
+  .third-container,
+  .fourth-container {
+    width: 100%;
+    height: auto;
+
+    padding: 45px;
+
+    gap: 40px;
+  }
+
+  .second-container img,
+  .third-container img,
+  .fourth-container img {
+    width: 240px;
+  }
+
+  .first-page h2 {
+    font-size: 46px;
+    line-height: 56px;
+  }
+}
+
+@media(max-width:768px) {
+
+  .first-page {
+    width: 100%;
+  }
+
+  .first-page h2 {
+    width: 100%;
+
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .second-container,
+  .third-container,
+  .fourth-container {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 35px 25px;
+  }
+
+  .second-container h3,
+  .third-container h3,
+  .fourth-container h3 {
+    width: 100%;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .second-container p,
+  .third-container p,
+  .fourth-container p {
+    width: 100%;
+  }
+
+  .second-container img,
+  .third-container img,
+  .fourth-container img {
+    width: 180px;
+  }
 }
